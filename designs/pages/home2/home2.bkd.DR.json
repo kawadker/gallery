@@ -509,7 +509,7 @@
                         {
                             "1": false,
                             "_key": "class",
-                            "_value": "sideMenu",
+                            "_value": "side-menu",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -738,7 +738,7 @@
                                     {
                                         "1": false,
                                         "_key": "class",
-                                        "_value": "profileImg",
+                                        "_value": "profile-user-image",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1075,7 +1075,7 @@
                                     {
                                         "1": false,
                                         "_key": "class",
-                                        "_value": "searchInput",
+                                        "_value": "side-nav-search-input",
                                         "_type": "kv",
                                         "_attrDef": "p"
                                     },
@@ -1709,7 +1709,7 @@
                                                 },
                                                 {
                                                     "_key": "class",
-                                                    "_value": "menulistclass",
+                                                    "_value": "menu-list",
                                                     "_type": "kv",
                                                     "_attrDef": "p"
                                                 },
@@ -2288,7 +2288,7 @@
                                     {
                                         "12": false,
                                         "_key": "fxFlex.md",
-                                        "_value": "31",
+                                        "_value": "{{zoomMd}}",
                                         "_type": "kv",
                                         "_attrDef": "c"
                                     },
@@ -2305,103 +2305,6 @@
                                         "_attrDef": "p"
                                     }
                                 ],
-                                "b7c2f852-fa01-4e62-60cc-3a29312fa27c": {
-                                    "paletteKey": "FlexLayoutCol",
-                                    "designerReference": [
-                                        {
-                                            "_key": "style",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "1": false,
-                                            "_key": "class",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "2": false,
-                                            "_key": "fxFlex",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "3": false,
-                                            "_key": "wrap",
-                                            "_value": "",
-                                            "_type": "a",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "fxLayoutGap",
-                                            "_value": "",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "layoutAlign",
-                                            "_value": "",
-                                            "_type": "a",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "6": false,
-                                            "_key": "fxShow",
-                                            "_value": "true",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "7": false,
-                                            "_key": "fxHide",
-                                            "_value": "true",
-                                            "_type": "kv",
-                                            "_attrDef": "p"
-                                        },
-                                        {
-                                            "_key": "pLayoutAlign",
-                                            "_value": "",
-                                            "_type": "a",
-                                            "_attrDef": "p"
-                                        }
-                                    ],
-                                    "45678fd6-4f10-bfa8-7c7a-bbb0321456ca": {
-                                        "paletteKey": "NG-image",
-                                        "designerReference": [
-                                            {
-                                                "0": false,
-                                                "_key": "style",
-                                                "_value": "",
-                                                "_type": "kv",
-                                                "_attrDef": "p"
-                                            },
-                                            {
-                                                "1": false,
-                                                "_key": "class",
-                                                "_value": "img1",
-                                                "_type": "kv",
-                                                "_attrDef": "p"
-                                            },
-                                            {
-                                                "2": false,
-                                                "_key": "imgSrc",
-                                                "_value": "{{img.src}}",
-                                                "_type": "kv",
-                                                "_attrDef": "p"
-                                            },
-                                            {
-                                                "3": false,
-                                                "_key": "alt",
-                                                "_value": "",
-                                                "_type": "kv",
-                                                "_attrDef": "p"
-                                            }
-                                        ]
-                                    }
-                                },
                                 "c0678b68-c66a-3a88-76a5-6c95b3db9bde": {
                                     "paletteKey": "HTML",
                                     "designerReference": [
@@ -2419,7 +2322,7 @@
                                         },
                                         {
                                             "_key": "html",
-                                            "_value": "<img class=\"img1\" src=\"{{img.src}}\" (click)=\"onImgClick(img)\" alt=\"{{img.title}}\" title=\"{{img.title}}\">\n",
+                                            "_value": "<img class=\"home-images-list\" src=\"{{img.src}}\" (click)=\"onImgClick(img)\" alt=\"{{img.title}}\" title=\"{{img.title}}\">\n",
                                             "_type": "a",
                                             "_attrDef": "p"
                                         }
@@ -2431,14 +2334,14 @@
                                         {
                                             "0": false,
                                             "_key": "style",
-                                            "_value": "",
+                                            "_value": "opacity:.5;",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
                                         {
                                             "1": false,
                                             "_key": "class",
-                                            "_value": "paragraphForDate",
+                                            "_value": "",
                                             "_type": "kv",
                                             "_attrDef": "p"
                                         },
@@ -2560,12 +2463,12 @@
                         "_attrDef": "p"
                     }
                 ],
-                "511af00a-523b-feb3-2a9f-ac5d6e8db53a": {
-                    "paletteKey": "NG-H6",
+                "3bbb9661-a90e-87e0-b290-f3df784e3ab9": {
+                    "paletteKey": "NG-Paragraph",
                     "designerReference": [
                         {
                             "_key": "style",
-                            "_value": "",
+                            "_value": "font-size:12px",
                             "_type": "kv",
                             "_attrDef": "p"
                         },
@@ -2576,7 +2479,7 @@
                             "_attrDef": "p"
                         },
                         {
-                            "_key": "H6 Text",
+                            "_key": "text",
                             "_value": "&copy; 2018",
                             "_type": "a",
                             "_attrDef": "p"

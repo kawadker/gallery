@@ -38,6 +38,7 @@ export class home2Component implements OnInit {
     arrayLists = [];
     gridval = 40;
     zoom = 23;
+    zoomMd = 31;
     images;
     // image = [];
     details = [];
@@ -88,13 +89,19 @@ export class home2Component implements OnInit {
     forZoom() {
         if (this.gridval == 20) {
             this.zoom = 18;
+            this.zoomMd = 18;
+            
         } else if (this.gridval == 40) {
+            this.zoomMd = 23;
             this.zoom = 23;
         } else if (this.gridval == 60) {
+            this.zoomMd = 31;
             this.zoom = 30;
         } else if (this.gridval == 80) {
+            this.zoomMd = 47;
             this.zoom = 47;
         } else if (this.gridval == 100) {
+            this.zoomMd = 47;
             this.zoom = 47;
         }
     }

@@ -8,5 +8,10 @@
         "appPageName": "home2",
         "componentName": "home2Component",
         "isEntry": false
+    },
+    "035e0d54-5ad3-2fab-70a4-d2471bdf982e": {
+        "appPageName": "demo",
+        "componentName": "demoComponent",
+        "isEntry": false
     }
 }

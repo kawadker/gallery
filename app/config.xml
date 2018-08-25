@@ -110,4 +110,6 @@
     <plugin name="cordova-plugin-tts" spec="https://github.com/vilic/cordova-plugin-tts.git" />
     <plugin name="cordova-plugin-mobile-ocr" spec="1.0.0" />
     <plugin name="cordova-plugin-shake" spec="0.6.0" />
+    <engine name="android" spec="~7.1.0" />
+    <engine name="ios" spec="~4.5.4" />
 </widget>

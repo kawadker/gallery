@@ -33,23 +33,23 @@ export class imagedataService {
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "sky"
+                            "title": "Sky"
                         },
                         {
                             "src": "https://www.madisonartery.com/wp-content/uploads/2014/12/art-3-1000x923-450x450.jpg",
-                            "title": "sky"
+                            "title": "Forest"
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "sky"
+                            "title": "Tree"
                         },
                         {
                             "src": "https://waterfeaturepros.com/wp-content/uploads/2016/12/ERLK-305-450x450.jpg",
-                            "title": "sky"
+                            "title": "Nature"
                         },
                         {
                             "src": "https://www.madisonartery.com/wp-content/uploads/2014/12/art-3-1000x923-450x450.jpg",
-                            "title": "sky"
+                            "title": "Lake"
                         },
                         {
                             "src": "https://media-cdn.tripadvisor.com/media/photo-s/0f/f1/26/45/river-narmada-flowing.jpg",
@@ -57,11 +57,11 @@ export class imagedataService {
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "sky"
+                            "title": "Sky"
                         },
                         {
                             "src": "https://waterfeaturepros.com/wp-content/uploads/2017/03/UC-450x450.jpg",
-                            "title": "sky"
+                            "title": "Rock"
                         }
                     ]
                 },
@@ -74,11 +74,11 @@ export class imagedataService {
                         },
                         {
                             "src": "https://www.madisonartery.com/wp-content/uploads/2014/12/art-3-1000x923-450x450.jpg",
-                            "title": "Water fall"
+                            "title": "River"
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "Water fall"
+                            "title": "Tree"
                         },
                         {
                             "src": "https://media-cdn.tripadvisor.com/media/photo-s/11/92/b2/a7/photo2jpg.jpg",
@@ -94,19 +94,19 @@ export class imagedataService {
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "Water fall"
+                            "title": "Tree"
                         },
                         {
                             "src": "https://www.madisonartery.com/wp-content/uploads/2014/12/art-3-1000x923-450x450.jpg",
-                            "title": "Water fall"
+                            "title": "River"
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "Water fall"
+                            "title": "Tree"
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "Water fall"
+                            "title": "Tree"
                         }
                     ]
                 },
@@ -139,19 +139,19 @@ export class imagedataService {
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "sky"
+                            "title": "Sky"
                         },
                         {
                             "src": "https://www.madisonartery.com/wp-content/uploads/2014/12/art-3-1000x923-450x450.jpg",
-                            "title": "sky"
+                            "title": "River"
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "sky"
+                            "title": "Tree"
                         },
                         {
                             "src": "https://buckleyins.com/wp-content/uploads/2018/03/nature-sky-twilight-grass-9198-450x450.jpg",
-                            "title": "sky"
+                            "title": "Tree"
                         }
                     ]
                 }
