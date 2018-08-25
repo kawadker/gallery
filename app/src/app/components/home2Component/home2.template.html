@@ -1,0 +1,87 @@
+<div fxLayout="column " style="border-radius:10px;" fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+  <div fxLayout="column " fxFlex="100" fxLayoutAlign="start start" fxShow="true" fxHide="false">
+    <mat-toolbar color="primary" style="position:fixed; top:0;left:0;z-index:10;height: 64px !important;">
+      <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+        <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start start" fxShow="true" fxHide="false" fxHide.gt-sm="true">
+          <mat-icon style="cursor:pointer" class="material-icons" (click)="sidenav.toggle()">menu</mat-icon>
+        </div>
+      </div>
+      <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="end end" fxShow="true" fxHide="false">
+        <mat-icon style="cursor:pointer;" (click)="logout()">power_settings_new</mat-icon>
+      </div>
+    </mat-toolbar>
+  </div>
+  <div fxLayout="column wrap" fxFlex="height:calc(100%-128px)" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <mat-sidenav-container style="top: 64px; left: 0px;position: absolute; " [ngStyle.xs]="{&apos;margin-top&apos;:&apos;0px &apos;}" fullscreen="">
+      <mat-sidenav #sidenav="" [mode]="modeVal" [opened]="opened" [fixedInViewport]="fixedSideNav" [ngStyle.lt-md]="{&apos;margin-top&apos;:&apos;0px &apos;}" class="sideMenu" (opened)="opened" (toggle)="sidenav.toggle()">
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+          <div fxLayout="column " fxLayoutAlign="center center" fxShow="true" fxHide="false">
+            <img mat-card-image="" class="profileImg" imgSrc="user.jpg">
+            <h4 style="font-family: &apos;Inconsolata&apos;, monospace;    margin: 10px 0 0px 0px;">{{user}}</h4>
+            <p style="       font-family: &apos;Inconsolata&apos;, monospace; margin: 0px 0 5px 0;">{{numOfImages}} Files</p>
+          </div>
+        </div>
+        <div fxLayout="column " style="overflo-y:auto;" fxFlex="calc(100%-300px)" fxLayoutAlign="start center" fxShow="true" fxHide="false">
+          <div fxLayout="column wrap" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+            <button mat-button="" class="uploadButton" color="accent">Upload</button>
+          </div>
+          <div fxLayout="column " style="width:100%;margin-top: -20px;" fxLayoutAlign="start start" fxShow="true" fxHide="false">
+            <mat-icon class="mat-icon-Search">search</mat-icon>
+            <mat-form-field style="  " class="searchInput">
+              <input matInput="" [(ngModel)]="text" type="text" (click)="textClick()">
+            </mat-form-field>
+          </div>
+          <div fxLayout="column " style="width:100%" fxLayoutAlign=" " fxShow="true" fxHide="false">
+            <p style="padding-left:8px; font-size:14px;font-family: &apos;Inconsolata&apos;, monospace; font-weight:bold;margin: 2px 0 6px 0;">CATEGORIES</p>
+            <n-toggleoptions [toggleOptions]="button" [align]="&apos;vertical&apos;"></n-toggleoptions>
+          </div>
+          <div fxLayout="row " style="width: 100%" fxLayoutAlign="start start" fxShow="true" fxHide="false">
+            <mat-accordion style="width: 100%;height:75%;">
+              <mat-expansion-panel hideToggle="true" [expanded]="false">
+                <mat-expansion-panel-header>
+                  <div fxLayout="row wrap" fxFlex="100" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+                    <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="start center" fxShow="true" fxHide="false">
+                      <mat-panel-title>
+                        ALBUMS
+                      </mat-panel-title>
+                    </div>
+                    <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="end center" fxShow="true" fxHide="false">
+                      <mat-icon class="material-icons" id="icon1">add_circle_outline</mat-icon>
+                    </div>
+                  </div>
+                </mat-expansion-panel-header>
+                <mat-list style="   margin-top:-20px" *ngFor="let image of arrayLists; let i =index">
+                  <mat-list-item (click)="menubtn1(image,i)" class="menulistclass">{{image.name}}</mat-list-item>
+                </mat-list>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          <div fxLayout="row wrap" style="position:fixed; bottom:80px;" fxFlex="100" fxLayoutAlign="start start" fxShow="true" fxHide="false" fxHide.lt-md="true">
+            <mat-icon style="color:red;cursor:pointer" class="zoom_out" (click)="gridSub()" title="Zoom out">remove_circle</mat-icon>
+            <mat-slider color="warn" max="100" min="0" value="{{gridval}}" step="20" [(ngModel)]="gridval" (click)="forZoom();"> </mat-slider>
+            <mat-icon style="color:red;cursor:pointer" class="zoom_in" (click)="gridAdd()" title="Zoom in">add_circle</mat-icon>
+          </div>
+        </div>
+      </mat-sidenav>
+      <div fxLayout="column wrap" style="margin-bottom:30px" fxLayoutAlign="space-around none" fxShow="true" fxHide="false">
+        <div fxLayout="column wrap" style="margin: 0 0 0px 30px;" fxFlex="100" fxLayoutGap="20px" fxLayoutAlign="start start" fxShow="true" fxHide="false" *ngFor="let image of arrayLists; let i = index">
+          <h3 id="heading{{i}}" class="albumNameHeading">{{image.name}}</h3>
+          <div fxLayout="row wrap" fxFlex="100" fxLayoutGap="10px" fxLayoutAlign="  none" fxShow="true" fxHide="false">
+            <div fxLayout="column " fxFlex="{{zoom}}" fxLayoutAlign="start stretch" fxShow="true" fxHide="false" fxFlex.sm="47" fxFlex.xs="100" *ngFor="let img of image.images" fxFlex.gt-md="{{zoom}}" fxFlex.md="31">
+              <div fxLayout="column " fxLayoutAlign=" " fxShow="true" fxHide="true">
+                <img imgSrc="{{img.src}}" class="img1">
+              </div>
+              <img class="img1" src="{{img.src}}" (click)="onImgClick(img)" alt="{{img.title}}" title="{{img.title}}">
+              <p [ngStyle.sm]="{&apos;font-size&apos;:&apos;10px&apos;}" [ngStyle.xs]="{&apos;font-size&apos;:&apos;10px&apos;}" class="paragraphForDate">{{img.title}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-container>
+  </div>
+  <mat-toolbar color="primary" style="    position: fixed !important;     bottom: 0;     z-index: 1;     height: 30px;">
+    <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <h6>&#xA9; 2018</h6>
+    </div>
+  </mat-toolbar>
+</div>

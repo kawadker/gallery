@@ -1,0 +1,209 @@
+/*Importing default angular material css theme. */
+// @import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+// @import "custom.scss";
+@import "nDefaults.scss";
+body{
+    font-family: 'Inconsolata', monospace;
+}
+.img1{
+    opacity: .7;
+    height: 80%;
+    width: 96%;
+    border-radius: 5px;
+    margin-bottom: 3px !important;
+}
+.img1:hover{
+    opacity: .75;
+    height: 80%;
+    width: 96%;
+    margin-bottom: 3px !important;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px 5px rgba(50,60,50,.5), 0 5px 5px 0 rgba(14,41,85,0), 0 5px 5px 0 rgba(62,35,51,.12) !important;
+}
+.menulistclass{
+    cursor:pointer;color:#fff !important;
+}
+.sideMenu{
+    width:250px;margin-top:64px;
+color:#fff;
+background-color:#2f2e2e;
+position:fixed;top:0;left:0;
+height: 100%;
+}
+.sideMenuForMd{
+position:fixed;top:0;left:0;
+}
+.profileImg{
+        width: 25% !important;
+    border-radius: 50%;
+    margin-top: 10px !important;
+}
+.uploadButton{
+    background-color: #ff5722; border-radius: 20px !important; padding: -2px 0 -2px 1; width: 132px;line-height: 28px !important;
+}
+.mat-icon-Search{
+position: relative;
+    top: 37px;
+    left: 7px;
+    z-index: 2;
+    font-size: 26px;
+    color: #868383;
+}
+
+.searchInput .mat-form-field-underline,.mat-form-field-infix  {
+    display: none;
+    border-top:0px;
+    border: 0 !important; 
+}
+.searchInput{
+ border: 0px solid #1f1e1e !important;
+    height: 30px;
+    width: 100%;
+    color: silver;
+    padding-top: 17px;
+    background-color: #252525;
+    margin-bottom: 0px !important ; 
+}
+.btnmenu{
+    width: 100%;
+}
+.sideNavButton{
+    margin-left: 10px;
+    padding-right: 10%;
+    width: 80%
+}
+ .searchInput .mat-form-field-empty.mat-form-field-placeholder {
+    display: block;
+    color: #807e7e;
+    margin-top: -10px;
+    padding-bottom: 8px;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+#icon1{
+    color: #ff5722;
+}
+
+.mat-button-toggle-label{
+    font-family: 'Inconsolata', monospace;
+    flex-direction: column !important ;
+    box-shadow: none !important;
+    width: 100%;
+    color: #b5b0b0;
+    cursor: pointer;
+    padding: 0;
+}
+.mat-button-toggle-group{
+    width: 100%;
+    box-shadow: none !important;
+}
+
+.mat-button-toggle-checked{
+background: linear-gradient(to right,red 2%,rgba(0,0,0,0) 2%,rgba(0,0,0,0) 2%);
+}
+
+.mat-button-toggle-checked:after{
+    content:"";
+    position:absolute; 
+    right:0; 
+    top:0;
+    width:99%;
+    height:100%;
+    background-color:#1f1f1f;
+    z-index:-1
+}
+.mat-expansion-panel-body{
+    padding: 0 !important;
+}
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,.12) !important;
+}
+.mat-expansion-panel{
+    color:#fff;
+    background-color: #252525;
+font-family: 'Inconsolata', monospace;
+margin-left: 8px
+}
+.mat-expansion-panel-header-title{
+    color:#fff;
+    font-weight: bold;
+    font-size:14px;font-family: 'Inconsolata', monospace;
+}
+.power{
+    margin-left:7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

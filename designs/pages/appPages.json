@@ -1,0 +1,12 @@
+{
+    "18c2c929-5988-d1bf-1ed4-0aebf88ac25e": {
+        "appPageName": "home",
+        "componentName": "homeComponent",
+        "isEntry": false
+    },
+    "23045407-d1c6-03a2-ca90-26bef1b07ff2": {
+        "appPageName": "home2",
+        "componentName": "home2Component",
+        "isEntry": false
+    }
+}

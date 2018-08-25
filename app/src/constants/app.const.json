@@ -1,0 +1,8 @@
+{
+    "dataSource": {
+        "userdatamodel": "gallery-rt",
+        "images": "gallery-rt",
+        "typeOfImages": "gallery-rt",
+        "galleryDb": "gallery-rt"
+    }
+}

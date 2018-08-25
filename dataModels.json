@@ -1,0 +1,80 @@
+{
+    "2b79095f-18ce-4553-af32-4511e8b5277f": {
+        "dataModelId": "2b79095f-18ce-4553-af32-4511e8b5277f",
+        "name": "userdatamodel",
+        "description": "datamode for user",
+        "dataSource": "gallery-rt",
+        "fields": [
+            {
+                "name": "name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "dob",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
+    },
+    "93f5f501-25e0-1d02-892c-aefd2d370073": {
+        "dataModelId": "93f5f501-25e0-1d02-892c-aefd2d370073",
+        "name": "images",
+        "description": "images",
+        "dataSource": "gallery-rt",
+        "fields": [
+            {
+                "name": "name",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "image",
+                "fieldType": 5,
+                "isArray": false,
+                "complexTypeName": "typeOfImages",
+                "complexTypeId": "484fd21a-c238-83f6-373a-99c8d4f42f4d"
+            }
+        ]
+    },
+    "484fd21a-c238-83f6-373a-99c8d4f42f4d": {
+        "dataModelId": "484fd21a-c238-83f6-373a-99c8d4f42f4d",
+        "name": "typeOfImages",
+        "description": "imagetype",
+        "dataSource": "gallery-rt",
+        "fields": [
+            {
+                "name": "src",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "title",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
+    },
+    "d202fdfc-b4da-8306-f5da-eed448969fbc": {
+        "dataModelId": "d202fdfc-b4da-8306-f5da-eed448969fbc",
+        "name": "galleryDb",
+        "description": "gallery datamodel",
+        "dataSource": "gallery-rt",
+        "fields": [
+            {
+                "name": "user",
+                "fieldType": 5,
+                "isArray": false,
+                "complexTypeName": "userdatamodel",
+                "complexTypeId": "2b79095f-18ce-4553-af32-4511e8b5277f"
+            },
+            {
+                "name": "images",
+                "fieldType": 5,
+                "isArray": true,
+                "complexTypeName": "images",
+                "complexTypeId": "93f5f501-25e0-1d02-892c-aefd2d370073"
+            }
+        ]
+    }
+}

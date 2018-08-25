@@ -1,0 +1,11 @@
+{
+    "artId": "",
+    "appName": "gallery",
+    "description": "gallery image pro",
+    "createDate": "2018-08-13T05:46:14.774Z",
+    "lastModified": "2018-08-13T05:46:14.774Z",
+    "createdBy": "user",
+    "artURL": "http://localhost:3000/bhive-art/",
+    "imgSourcePath": "",
+    "version": "1.0.0"
+}
