@@ -49,24 +49,18 @@ export class homeComponent implements OnInit {
     }
 
     submit() {
+        if (this.rememberVal == true) {
+            this.remember = true;
+        }
         this.loginService.login(this.username, this.password).subscribe(data => {
-            if (data) {
+            if (data['accessToken']) {
                 this.router.navigate(['home']);
-                console.log(data)            
+                // console.log(data)            
+            }
+            else {
+                console.log(false)
             }
         });
-        //   this.loginService.login(this.username, this.password, this.remember).subscribe(data => {
-        //     console.log(JSON.stringify(data.accessToken));
-        //         console.log(data)            
-            
-        //     if (JSON.stringify(data['accessToken'])) {
-        //         this.router.navigate(['/home2']);
-        //         console.log(true)
-        //     }
-        //     else {
-        //         console.log(false)
-        //     }
-        // });
     }
     get(dataModelName, filter?, keys?, sort?, pagenumber?, pagesize?) {
         this.dm.get(dataModelName, this, filter, keys, sort, pagenumber, pagesize,

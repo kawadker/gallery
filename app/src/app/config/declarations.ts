@@ -14,8 +14,6 @@ window['neutrinos'] = {
 }
 
 //CORE_REFERENCE_IMPORTS
-//CORE_REFERENCE_IMPORT-demoComponent
-import { demoComponent } from '../components/demoComponent/demo.component';
 //CORE_REFERENCE_IMPORT-gallerydataService
 import { gallerydataService } from '../services/galleryData/gallerydata.service';
 //CORE_REFERENCE_IMPORT-imagedataService
@@ -58,8 +56,6 @@ export const appDeclarations = [
   PageNotFoundComponent,
   NMapComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
-//CORE_REFERENCE_PUSH_TO_DEC_ARRAY-demoComponent
-demoComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-home2Component
   home2Component,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-homeComponent

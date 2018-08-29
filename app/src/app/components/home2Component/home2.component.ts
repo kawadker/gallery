@@ -4,7 +4,7 @@ import { ModelMethods } from '../../lib/model.methods';
 import { NDataModelService } from 'neutrinos-seed-services';
 import { Router } from '@angular/router'
 import { imagedataService } from '../../services/imageData/imagedata.service';
-import { gallerydataService } from '../../services/galleryData/gallerydata.service';
+// import { gallerydataService } from '../../services/galleryData/gallerydata.service';
 import { NLogoutService } from 'neutrinos-seed-services';
 import { Subscription } from 'rxjs/Subscription';
 import { MediaChange, ObservableMedia } from '@angular/flex-layout';
@@ -40,18 +40,16 @@ export class home2Component implements OnInit {
     zoom = 23;
     zoomMd = 31;
     images;
-    // image = [];
-    details = [];
     button = [
-        { value: 'Video', disabled: false, 'checked': true },
-        { value: 'Video', disabled: false, 'checked': false },
-        { value: 'Project', disabled: false, 'checked': false }
+        { value: 'Nature', disabled: false, 'checked': true },
+        { value: 'Water Fall', disabled: false, 'checked': false },
+        { value: 'Mountain', disabled: false, 'checked': false }
     ]
     constructor(
         private bdms: NDataModelService,
         private imagedata: imagedataService,
         private router: Router,
-        private gallerydata: gallerydataService,
+        // private gallerydata: gallerydataService,
         private logoutservice: NLogoutService,
         public media: ObservableMedia,
 
@@ -90,7 +88,6 @@ export class home2Component implements OnInit {
         if (this.gridval == 20) {
             this.zoom = 18;
             this.zoomMd = 18;
-            
         } else if (this.gridval == 40) {
             this.zoomMd = 23;
             this.zoom = 23;
@@ -130,13 +127,18 @@ export class home2Component implements OnInit {
         this.zoom = 47;
     }
 
-
-    menubtn1(data, i) {
-        let idOfDiv = 'heading' + i;
-        console.log(idOfDiv)
+menubtn2(event){
+    console.log(event);
+    let idOfDiv = 'heading' + event;
         let el = document.getElementById(idOfDiv)
         el.scrollIntoView()
-    }
+}
+
+    // menubtn1(data, i) {
+    //     let idOfDiv = 'heading' + i;
+    //     let el = document.getElementById(idOfDiv)
+    //     el.scrollIntoView()
+    // }
 
     //for getting the data frpm database we need to use this method
     get(galleryDb, filter?, keys?, sort?, pagenumber?, pagesize?) {
